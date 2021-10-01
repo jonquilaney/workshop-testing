@@ -6,14 +6,16 @@ use DateTime;
 
 class DateFormatter
 {
+
     /**
      * Get current part of the day
      *
+     * @param \DateTime $dateTime Date and time to get part of.
+     *
      * @return string
      */
-    public function getPartOfDay() : string
+    public function getPartOfDay(DateTime $dateTime) : string
     {
-        $dateTime    = new DateTime();
         $currentHour = $dateTime->format('G');
 
         if ($currentHour >= 0 && $currentHour < 6)
