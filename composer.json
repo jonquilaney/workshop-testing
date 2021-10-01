@@ -14,5 +14,9 @@
         "psr-4": {
             "IW\\Tests\\Workshop\\": "tests/"
         }
+    },
+    "scripts": {
+        "phpunit": "./vendor/bin/phpunit -c phpunit.xml",
+        "phpunit-testdox": "./vendor/bin/phpunit -c phpunit.xml --testdox"
     }
 }
